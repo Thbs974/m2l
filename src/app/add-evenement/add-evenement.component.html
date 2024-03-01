@@ -1,0 +1,56 @@
+<div class="container">
+    <div>
+    <h2>Ajouter un Evenement :</h2>
+    </div>
+
+    <form >
+        <!-- <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >ID Evenement</label>
+        <input type="text" [(ngModel)]="newEvenement.idEvenement"
+        name="idEvenement" class="form-control">
+        </div> -->
+
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+        <label >Discipline</label>
+        <input type="text"[(ngModel)]= "newEvenement.categorie"
+        name="categorie" class="form-control">
+        </div>
+
+        <!-- <div class="col-sm-4 col-md-4 col-lg-4" >
+        <label >Grade</label>
+        <input type="color"[(ngModel)]= "newEvenement.categorie"
+        name="categorie" class="form-control">
+        </div> -->
+
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+        <label >Nom Evenement</label>
+        <input type="text"[(ngModel)]= "newEvenement.nomEvenement"
+        name="nomEvenement" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+        <label >Description</label>
+        <input type="text"[(ngModel)]= "newEvenement.descriptionEvenement"
+        name="descriptionEvenement" class="form-control">
+        </div>
+
+       
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <label >Date Début</label>
+        <input type="date" [(ngModel)]= "newEvenement.dateDebutEvenement"
+        name="dateDebutEvenement" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <label >Date Fin</label>
+        <input type="date" [(ngModel)]= "newEvenement.dateFinEvenement"
+        name="dateFinEvenement" class="form-control">
+        </div>
+
+
+        <div class="mt-2">
+        <button type="submit" (click)="addEvenement()"class="btn btn-success">Ajouter</button>
+        </div>
+        </form>
+</div>
